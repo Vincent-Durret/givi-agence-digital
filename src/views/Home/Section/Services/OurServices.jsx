@@ -1,6 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./OurServices.scss";
+import { faYinYang as faYinYang } from "@fortawesome/free-solid-svg-icons";
 
 const OurServices = () => {
   return (
@@ -8,7 +10,10 @@ const OurServices = () => {
       <div className="ourservices__grid">
         <div className="ourservices__grid-item">
           <div className="item__content">
-            <h3>Stratégie digitale</h3>
+            <h3>
+              <FontAwesomeIcon icon={faYinYang} className="icon" />
+              Stratégie digitale
+            </h3>
             <p>
               Ensemble, établissons une stratégie digitale pertinente pour
               optimiser votre ROI. Chaque canal a ses spécificités, identifions
@@ -18,7 +23,10 @@ const OurServices = () => {
         </div>
         <div className="ourservices__grid-item">
           <div className="item__content">
-            <h3>Community management</h3>
+            <h3>
+              <FontAwesomeIcon icon={faYinYang} className="icon" />
+              Community management
+            </h3>
             <p>
               Dans le paysage dynamique des médias sociaux, une gestion efficace
               de votre communauté est essentielle. Sur des plateformes comme
@@ -29,7 +37,10 @@ const OurServices = () => {
         </div>
         <div className="ourservices__grid-item">
           <div className="item__content">
-            <h3>Création de contenu</h3>
+            <h3>
+              <FontAwesomeIcon icon={faYinYang} className="icon" />
+              Création de contenu
+            </h3>
             <p>
               Le contenu visuel est souvent le premier point de contact avec
               votre audience. Nous nous assurons de produire du contenu de haute
@@ -40,7 +51,10 @@ const OurServices = () => {
         </div>
         <div className="ourservices__grid-item">
           <div className="item__content">
-            <h3>Site web et application </h3>
+            <h3>
+              <FontAwesomeIcon icon={faYinYang} className="icon" />
+              Site web et application
+            </h3>
             <p>
               Votre présence en ligne est votre principal outil de
               communication. Nous concevons et optimisons des sites web et
@@ -51,7 +65,10 @@ const OurServices = () => {
         </div>
         <div className="ourservices__grid-item">
           <div className="item__content">
-            <h3>Rédaction</h3>
+            <h3>
+              <FontAwesomeIcon icon={faYinYang} className="icon" />
+              Rédaction
+            </h3>
             <p>
               Les mots ont un pouvoir. Qu'il s'agisse d'emails, d'articles de
               blog ou de fiches produits, ajustons votre ton et contenu pour
@@ -61,7 +78,10 @@ const OurServices = () => {
         </div>
         <div className="ourservices__grid-item">
           <div className="item__content">
-            <h3>Référencement naturel (SEO)</h3>
+            <h3>
+              <FontAwesomeIcon icon={faYinYang} className="icon" />
+              Référencement naturel (SEO)
+            </h3>
             <p>
               Augmentez la visibilité de votre site avec une stratégie SEO
               efficace. Définissons ensemble les mots-clés cibles, et

@@ -1,13 +1,10 @@
 import React from "react";
-import BannerImg from "../../../../assets/Home/Banner/banner_givi.jpg";
-
 import "./Banner.scss";
 import LinkButton from "../../../../components/UI/Button/LinkButton";
 
 const Banner = () => {
   return (
     <section className="banner">
-      <img className="banner__img" src={BannerImg} alt="" />
       <div className="banner__content">
         <div className="banner__title">
           <h1>
