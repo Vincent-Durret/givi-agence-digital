@@ -1,0 +1,27 @@
+.ourservices {
+    margin-top: 2rem;
+    height: auto;
+    max-width: 100%;
+    &__grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 4rem;
+
+        .ourservices__grid-item {
+            padding: 20px;
+            font-size: 30px;
+            .item__content {
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+}
