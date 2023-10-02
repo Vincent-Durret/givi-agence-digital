@@ -4,6 +4,7 @@ import "./Home.scss";
 import Banner from "./Section/Banner/Banner";
 import OurServices from "./Section/Services/OurServices";
 import StrongPoint from "./Section/StrongPoint/StrongPoint";
+import Trust from "./Section/Trust/Trust";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner />
       <OurServices />
       <StrongPoint />
+      <Trust />
     </div>
   );
 };
