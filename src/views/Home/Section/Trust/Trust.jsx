@@ -1,49 +1,34 @@
-import React, { useEffect, useState } from "react";
+// Import Swiper React components
+import { Autoplay } from "swiper/modules";
 
-import "./Trust.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
 import LogoUTB from "../../../../assets/Logo/LogoClient/logo_univers_terrasses_bois.png";
 import LogoAlchimie from "../../../../assets/Logo/LogoClient/logo_c_chouette_alchimie.png";
 import LogoImpact from "../../../../assets/Logo/LogoClient/logo_impact_cbd.png";
 import LogoParerga from "../../../../assets/Logo/LogoClient/logo_parerga.png";
+import "./Trust.scss";
+
+// Import Swiper styles
+import "swiper/css";
 
 const Trust = () => {
-  const data = [LogoUTB, LogoAlchimie, LogoImpact, LogoParerga];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const carouselInfiniteScroll = () => {
-    if (currentIndex === data.length - 1) {
-      return setCurrentIndex(0);
-    }
-    return setCurrentIndex(currentIndex + 1);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      carouselInfiniteScroll();
-    }, 3000);
-    return () => clearInterval(interval);
-  });
-
   return (
-    <section className="trust">
-      <div className="trust__title-container">
-        <h1>Ils nous font confiance</h1>
-      </div>
-      <div className="trust__carousel-container">
-        {data.map((item, index) => {
-          return (
-            <div
-              className="carousel__item"
-              style={{ transform: `translate(-${currentIndex * 100}%)` }}
-              key={index}
-            >
-              <img src={item} alt="" />
-            </div>
-          );
-        })}
-      </div>
-    </section>
+    <div className="trust">
+      <Swiper modules={[Autoplay]} autoplay spaceBetween={0} slidesPerView={3}>
+        <SwiperSlide>
+          <img src={LogoUTB} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={LogoAlchimie} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={LogoImpact} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={LogoParerga} alt="" />
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
-
 export default Trust;
