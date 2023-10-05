@@ -1,5 +1,9 @@
 import React from "react";
 
+import LinkButton from "../../../../components/UI/Button/LinkButton";
+
+import CoupleImg from "../../../../assets/Home/OurVision/couple_givi.jpg";
+
 import "./OurVision.scss";
 
 const OurVision = () => {
@@ -12,27 +16,36 @@ const OurVision = () => {
           qu'un simple outil : il est le terrain sur lequel les rêves prennent
           forme et les idées s'épanouissent.
         </p>
+        <br />
         <p>
           Chez GIVI notre vision est claire : vous guider et vous accompagner
           dans cet univers.
-        </p>
+        </p>{" "}
+        <br />
         <p>
           Notre objectif principal est de vous aider à naviguer avec confiance
           dans ce monde numérique, de transformer vos ambitions en réalités
           tangibles et d'assurer que votre voix soit entendue dans cette vaste
           mer d'innovations.
         </p>
+        <br />
         <p>
           Ensemble, explorons les opportunités du monde 2.0 et construisons
           votre succès.
         </p>
+        <div className="ourvision__actions">
+          <LinkButton
+            to="/notre-vision"
+            className="ourvision__button"
+            text="en savoir plus"
+          />
+        </div>
       </div>
       <div className="ourvision__img">
-        <img src="" alt="" />
-      </div>
-      <div className="ouvision__actions">
-        <button>en savoir plus </button>
+        <img src={CoupleImg} alt="" />
       </div>
     </section>
   );
 };
+
+export default OurVision;
