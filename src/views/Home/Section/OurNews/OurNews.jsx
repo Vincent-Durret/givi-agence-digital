@@ -54,7 +54,7 @@ const OurNews = () => {
           </div>
         </div>
       </div>
-      <hr />
+      <hr color="#000" />
     </section>
   );
 };
