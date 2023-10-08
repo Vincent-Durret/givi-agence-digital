@@ -7,6 +7,7 @@ import Portofolio from "../views/Portofolio/Portofolio";
 import Vision from "../views/Vision/Vision";
 import News from "../views/News/News";
 import Contact from "../views/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 const RouterComponent = () => {
   return (
@@ -19,6 +20,7 @@ const RouterComponent = () => {
         <Route exact path="/nos-actualites" element={<News />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

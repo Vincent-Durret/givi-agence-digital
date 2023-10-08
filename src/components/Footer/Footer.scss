@@ -1,0 +1,66 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 5rem;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    &__container {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        width: 35%;
+        margin-bottom: 1.5rem;
+
+        p {
+            font-size: 1.1rem;
+            color: #000;
+        }
+    }
+
+    &__mail {
+
+        margin-bottom: 2rem;
+        input {
+            padding: 0.4rem 1rem;
+            border: 1px solid #000;
+            border-right: none;
+            font-size: 1.3rem;
+            border-radius: 0.3rem 0 0 0.3rem ;
+
+            &::placeholder {
+                font-size: 1.2rem;
+                color: #000;
+
+            }
+        }
+
+        button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 2rem 0.5rem 1rem;
+            font-size: 1.3rem;
+            border-radius: 0.2rem;           
+        }
+
+    }
+    
+    p {
+        color: #000;
+        margin-bottom: 2rem;
+    }
+    &__logo {
+
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+}

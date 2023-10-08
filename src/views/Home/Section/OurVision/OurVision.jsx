@@ -20,7 +20,7 @@ const OurVision = () => {
         <p>
           Chez GIVI notre vision est claire : vous guider et vous accompagner
           dans cet univers.
-        </p>{" "}
+        </p>
         <br />
         <p>
           Notre objectif principal est de vous aider à naviguer avec confiance
