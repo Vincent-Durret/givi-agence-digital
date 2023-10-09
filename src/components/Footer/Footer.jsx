@@ -1,6 +1,12 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./Footer.scss";
+import {
+  faFacebook,
+  faLinkedin,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -18,9 +24,15 @@ const Footer = () => {
       </div>
       <p>contact@ave-communication.fr</p>
       <div className="footer__logo">
-        <span>Linkedin</span>
-        <span>Instagram</span>
-        <span>Facebook</span>
+        <FontAwesomeIcon className="icon" icon={faLinkedin} />
+        <FontAwesomeIcon className="icon" icon={faSquareInstagram} />
+        <FontAwesomeIcon className="icon" icon={faFacebook} />
+      </div>
+      <div className="footer__end-content">
+        <p>© 2023 Agence GIVI communication with .</p>
+        <p>Tous droits réservés </p>
+        <p>Mentions Légales</p>
+        <p>Politique de Confidentialité</p>
       </div>
     </section>
   );
