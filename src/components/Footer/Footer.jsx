@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./Footer.scss";
 import {
-  faFacebook,
+  faSquareFacebook,
   faLinkedin,
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="footer__logo">
         <FontAwesomeIcon className="icon" icon={faLinkedin} />
         <FontAwesomeIcon className="icon" icon={faSquareInstagram} />
-        <FontAwesomeIcon className="icon" icon={faFacebook} />
+        <FontAwesomeIcon className="icon" icon={faSquareFacebook} />
       </div>
       <div className="footer__end-content">
         <p>© 2023 Agence GIVI communication with .</p>

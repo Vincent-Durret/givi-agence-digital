@@ -1,0 +1,36 @@
+.icontrust {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 50%;
+
+        .container__card {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .card__icon {
+                background: #000;
+                padding: 0.8rem;
+                border-radius: 50%;
+                margin-bottom: 1.3rem;
+
+                .iconTrust {
+                    color: #fff;
+                    font-size: 3rem;
+                }
+
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+}

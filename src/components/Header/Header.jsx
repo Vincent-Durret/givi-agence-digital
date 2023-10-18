@@ -26,11 +26,25 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className={changeLogo ? "header__logo--small" : "header__logo"}>
+      <div className="header__logo">
+        <Link to="/">
+          <img
+            className={changeLogo ? "hidden" : ""}
+            src={Logo}
+            alt="logo givi"
+          />
+          <img
+            className={changeLogo ? "" : "hidden"}
+            src={LogoSmall}
+            alt="logo givi small"
+          />
+        </Link>
+      </div>
+      {/* <div className={changeLogo ? "header__logo--small" : "header__logo"}>
         <Link to="/">
           <img src={changeLogo ? LogoSmall : Logo} alt="logo givi" />
         </Link>
-      </div>
+      </div> */}
       <ul className="header__items">
         <li className="header__item">
           <Link className="item__link" to="/nos-projet">

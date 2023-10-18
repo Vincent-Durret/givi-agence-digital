@@ -1,9 +1,14 @@
 import React from "react";
+import TalkAboutProject from "./Section/TalkAboutProject/TalkAboutProject";
+import IconTrust from "./Section/IconTrust/IconTrust";
+import ContactForm from "./Section/ContactForm/ContactForm";
 
 const Contact = () => {
   return (
     <div className="contact">
-      <h1>Contact</h1>
+      <TalkAboutProject />
+      <IconTrust />
+      <ContactForm />
     </div>
   );
 };

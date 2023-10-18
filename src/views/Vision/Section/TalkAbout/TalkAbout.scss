@@ -1,0 +1,34 @@
+.talkabout {
+    max-width: 100%;
+    height: 50vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__content {
+        color: #fff;
+        
+        h2 {
+            font-size: 4rem;
+            margin-bottom: 1rem ;
+        }
+
+        .content__action {
+
+            display: flex; 
+            justify-content: start;
+
+            .action {
+                background: #fff;
+                font-size: 1.3rem;
+                padding: 0.3rem 0.6rem;
+                border-radius: calc(5rem / 6.2);
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+}

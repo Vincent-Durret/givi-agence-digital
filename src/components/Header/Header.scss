@@ -13,13 +13,34 @@
     transition: all 0.3s ease-in-out;
     // border-bottom: 1px solid red;
 
-    &__logo, &__logo--small {
-        max-width: 100%;
+   
+    
+    .header__logo {
+        position: relative;
+        width: 12rem;  // Définir une largeur pour le conteneur du logo
+    
         img {
-            width: 12rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 100%;  // Faire en sorte que l'image prenne toute la largeur du conteneur
+          transition: opacity 1s ;
         }
+    
+        .hidden {
+          opacity: 0;
+          pointer-events: none;  // Désactiver les clics sur l'image cachée
+        }
+      }
 
-    }
+    // .header__logo img {
+    //     transition: width 1s ease-in-out;
+    // }
+
+    // .header__logo--small img {
+    //     transition: all 1s ease-in-out;
+    // }
 
     &__items {
         width: 50%;
