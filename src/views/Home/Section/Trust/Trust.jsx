@@ -1,32 +1,40 @@
 // Import Swiper React components
+import React, { useState } from "react";
 import { Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import LogoUTB from "../../../../assets/Logo/LogoClient/logo_univers_terrasses_bois.png";
-import LogoAlchimie from "../../../../assets/Logo/LogoClient/logo_c_chouette_alchimie.png";
-import LogoImpact from "../../../../assets/Logo/LogoClient/logo_impact_cbd.png";
-import LogoParerga from "../../../../assets/Logo/LogoClient/logo_parerga.png";
 import "./Trust.scss";
 
 // Import Swiper styles
 import "swiper/css";
 
 const Trust = () => {
+  const [items, setItems] = useState([
+    {
+      id: 1,
+      img: "/assets/Logo/LogoClient/logo_univers_terrasses_bois.png",
+    },
+    {
+      id: 2,
+      img: "/assets/Logo/LogoClient/logo_c_chouette_alchimie.png",
+    },
+    {
+      id: 3,
+      img: "/assets/Logo/LogoClient/logo_impact_cbd.png",
+    },
+    {
+      id: 4,
+      img: "/assets/Logo/LogoClient/logo_parerga.png",
+    },
+  ]);
   return (
     <div className="trust">
       <Swiper modules={[Autoplay]} autoplay spaceBetween={0} slidesPerView={3}>
-        <SwiperSlide>
-          <img src={LogoUTB} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={LogoAlchimie} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={LogoImpact} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={LogoParerga} alt="" />
-        </SwiperSlide>
+        {items.map((item) => (
+          <SwiperSlide key={item.id}>
+            <img src={item.img} alt="" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
