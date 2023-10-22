@@ -26,10 +26,23 @@ const Trust = () => {
       id: 4,
       img: "/assets/Logo/LogoClient/logo_parerga.png",
     },
+    {
+      id: 5,
+      img: "/assets/Logo/LogoClient/logo_city_weed.png",
+    },
+    {
+      id: 6,
+      img: "/assets/Logo/LogoClient/logo_excellium_nutrition.png",
+    },
   ]);
   return (
-    <div className="trust">
-      <Swiper modules={[Autoplay]} autoplay spaceBetween={0} slidesPerView={3}>
+      <Swiper
+        modules={[Autoplay]}
+        loop={true}
+        autoplay
+        spaceBetween={0}
+        slidesPerView={3}
+      >
         {items.map((item) => (
           <SwiperSlide key={item.id}>
             <img src={item.img} alt="" />

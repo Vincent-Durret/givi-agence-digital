@@ -40,11 +40,6 @@ const Header = () => {
           />
         </Link>
       </div>
-      {/* <div className={changeLogo ? "header__logo--small" : "header__logo"}>
-        <Link to="/">
-          <img src={changeLogo ? LogoSmall : Logo} alt="logo givi" />
-        </Link>
-      </div> */}
       <ul className="header__items">
         <li className="header__item">
           <Link className="item__link" to="/nos-projet">
