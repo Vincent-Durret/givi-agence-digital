@@ -36,20 +36,19 @@ const Trust = () => {
     },
   ]);
   return (
-      <Swiper
-        modules={[Autoplay]}
-        loop={true}
-        autoplay
-        spaceBetween={0}
-        slidesPerView={3}
-      >
-        {items.map((item) => (
-          <SwiperSlide key={item.id}>
-            <img src={item.img} alt="" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <Swiper
+      modules={[Autoplay]}
+      loop={true}
+      autoplay
+      spaceBetween={0}
+      slidesPerView={3}
+    >
+      {items.map((item) => (
+        <SwiperSlide key={item.id}>
+          <img src={item.img} alt="" />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 export default Trust;
