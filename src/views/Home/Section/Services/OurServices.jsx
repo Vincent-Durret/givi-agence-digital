@@ -43,14 +43,14 @@ const OurServices = () => {
         {items.map((item) => (
           <div key={item.id} className="p-[20px] text-[2rem]">
             <div>
-              <h3 className="text-[1.5rem] mb-[1rem]">
+              <h3 className="text-[1.5rem] mb-[1rem] font-bold">
                 <FontAwesomeIcon
                   icon={faYinYang}
                   className="text-black mr-[0.5rem]"
                 />
                 {item.title}
               </h3>
-              <p className="text-[1.3rem]">{item.text}</p>
+              <p className="text-[1.3rem] font-[500]">{item.text}</p>
             </div>
           </div>
         ))}

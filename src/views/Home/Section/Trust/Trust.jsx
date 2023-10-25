@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Trust.scss";
 
 // Import Swiper styles
 import "swiper/css";
