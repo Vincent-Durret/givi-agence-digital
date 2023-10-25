@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Banner.scss";
 import LinkButton from "../../../../components/UI/Button/LinkButton";
 
 const Banner = () => {

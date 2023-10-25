@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./OurServices.scss";
 import { faYinYang as faYinYang } from "@fortawesome/free-solid-svg-icons";
 
 const OurServices = () => {
@@ -39,16 +38,19 @@ const OurServices = () => {
   ]);
 
   return (
-    <section className="ourservices">
-      <div className="ourservices__grid">
+    <section className="mt-[2rem] h-auto max-w-[100%]">
+      <div className="grid grid-cols-3 gap-3 p-[4rem]">
         {items.map((item) => (
-          <div key={item.id} className="ourservices__grid-item">
-            <div className="item__content">
-              <h3>
-                <FontAwesomeIcon icon={faYinYang} className="icon" />
+          <div key={item.id} className="p-[20px] text-[2rem]">
+            <div>
+              <h3 className="text-[1.5rem] mb-[1rem]">
+                <FontAwesomeIcon
+                  icon={faYinYang}
+                  className="text-black mr-[0.5rem]"
+                />
                 {item.title}
               </h3>
-              <p>{item.text}</p>
+              <p className="text-[1.3rem]">{item.text}</p>
             </div>
           </div>
         ))}
