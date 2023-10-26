@@ -7,7 +7,8 @@ const Banner = () => {
       <div className="relative top-[15%] left-[10%] w-[77%]">
         <div className="bg-white  pl-[1rem] pr-[1rem] pt-[0.5rem] pb-[0.5rem] rounded-[calc(5rem/2.8)]">
           <h1 className="text-[3rem] font-bold">
-            L'harmonie du Yin et Yang appliquée à votre stratégie digitale
+            L'harmonie du Yin et Yang appliquée à votre
+            <span className="text-[#9e0168]"> stratégie digitale</span>
           </h1>
         </div>
         <div className="m-w-[100%] mt-[2rem]">

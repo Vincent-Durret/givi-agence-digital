@@ -10,29 +10,52 @@ import {
 
 const Footer = () => {
   return (
-    <section className="flex items-center justify-center flex-column max-w-full mt-[12rem]">
+    <section className="flex items-center justify-center flex-col max-w-full mt-[12rem]">
       <h2 className="text-[2.5rem] font-bold">Restons en contact</h2>
-      <div className="flex items-start justify-start w-[35%] mb-[1.5rem]">
-        <p className="text-[1.1rem] text-black">
+      <div className="flex items-start  justify-start w-[35%] mb-[1.5rem]">
+        <p className="px-[6rem] text-[1.1rem] text-black">
           Inscrivez-vous à notre newsletter et suivez nos derniers projets et
           toutes nos actualités !
         </p>
       </div>
-      <div className="mb-[2rem]">
-        <input type="mail" placeholder="email*" /> // see input with tailwind
-        <button>s'inscrire</button>
+      <div className="mb-[2rem] flex w-[25%] ">
+        <input
+          className="w-[100%] border-[2px] border-black rounded-s-lg border-r-0 placeholder:text-black text-[1.2rem] focus:outline-none"
+          type="mail"
+          placeholder="email*"
+        />
+        <button className="bg-black text-white border-none pl-[1rem] pr-[2rem] py-[0.1rem] rounded-[0.2rem] text-[1.3rem]">
+          s'inscrire
+        </button>
       </div>
-      <p>contact@ave-communication.fr</p>
-      <div className="footer__logo">
-        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-        <FontAwesomeIcon className="icon" icon={faSquareInstagram} />
-        <FontAwesomeIcon className="icon" icon={faSquareFacebook} />
+      <p className="text-black mb-[2rem]">contact@ave-communication.fr</p>
+      <div className="flex justify-center mb-[5rem]">
+        <FontAwesomeIcon
+          className="text-[2.5rem] p-[0.2rem]"
+          icon={faLinkedin}
+        />
+        <FontAwesomeIcon
+          className="text-[2.5rem] p-[0.2rem]"
+          icon={faSquareInstagram}
+        />
+        <FontAwesomeIcon
+          className="text-[2.5rem] p-[0.2rem]"
+          icon={faSquareFacebook}
+        />
       </div>
-      <div className="footer__end-content">
-        <p>© 2023 Agence GIVI communication with .</p>
-        <p>Tous droits réservés </p>
-        <p>Mentions Légales</p>
-        <p>Politique de Confidentialité</p>
+      <div className="flex items-center flex-row">
+        <p className="text-[1.2rem font-[400] pl-[0.3rem] pr-[0.3rem] border-r-[1px] border-black">
+          © 2023 Agence GIVI communication with .
+        </p>
+        <p className="text-[1.2rem font-[400] pl-[0.3rem] pr-[0.3rem] border-r-[1px] border-black">
+          Tous droits réservés{" "}
+        </p>
+        <p className="text-[1.2rem font-[400] pl-[0.3rem] pr-[0.3rem] border-r-[1px] border-black">
+          Mentions Légales
+        </p>
+        <p className="text-[1.2rem font-[400] pl-[0.3rem] pr-[0.3rem] border-r-[1px] border-black">
+          Politique de Confidentialité
+        </p>
       </div>
     </section>
   );
