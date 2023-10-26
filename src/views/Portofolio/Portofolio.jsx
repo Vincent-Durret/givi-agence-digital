@@ -1,10 +1,11 @@
 import React from "react";
+import PageStyle from "../../components/Page/PageStyle";
 
 const Portofolio = () => {
   return (
-    <div className="portofolio">
+    <PageStyle>
       <h1>Portofolio</h1>
-    </div>
+    </PageStyle>
   );
 };
 

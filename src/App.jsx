@@ -4,11 +4,9 @@ import RouterComponent from "./Router/RouterComponent";
 
 function App() {
   return (
-    <>
-      <div>
-        <RouterComponent />
-      </div>
-    </>
+    <div>
+      <RouterComponent />
+    </div>
   );
 }
 

@@ -1,10 +1,11 @@
 import React from "react";
+import PageStyle from "../../components/Page/PageStyle";
 
 const News = () => {
   return (
-    <div className="news">
+    <PageStyle>
       <h1>News</h1>
-    </div>
+    </PageStyle>
   );
 };
 

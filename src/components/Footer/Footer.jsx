@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./Footer.scss";
+// import "./Footer.scss";
 import {
   faSquareFacebook,
   faLinkedin,
@@ -10,16 +10,16 @@ import {
 
 const Footer = () => {
   return (
-    <section className="footer">
-      <h2>Restons en contact</h2>
-      <div className="footer__container">
-        <p>
+    <section className="flex items-center justify-center flex-column max-w-full mt-[12rem]">
+      <h2 className="text-[2.5rem] font-bold">Restons en contact</h2>
+      <div className="flex items-start justify-start w-[35%] mb-[1.5rem]">
+        <p className="text-[1.1rem] text-black">
           Inscrivez-vous à notre newsletter et suivez nos derniers projets et
           toutes nos actualités !
         </p>
       </div>
-      <div className="footer__mail">
-        <input type="mail" placeholder="email*" />
+      <div className="mb-[2rem]">
+        <input type="mail" placeholder="email*" /> // see input with tailwind
         <button>s'inscrire</button>
       </div>
       <p>contact@ave-communication.fr</p>

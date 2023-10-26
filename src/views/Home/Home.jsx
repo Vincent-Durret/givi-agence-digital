@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Home.scss";
+import PageStyle from "../../components/Page/PageStyle";
 import Banner from "./Section/Banner/Banner";
 import OurServices from "./Section/Services/OurServices";
 import StrongPoint from "./Section/StrongPoint/StrongPoint";
@@ -12,7 +12,7 @@ import YourIdeas from "./Section/YourIdeas/YourIdeas";
 
 const Home = () => {
   return (
-    <div className="home">
+    <PageStyle>
       <Banner />
       <OurServices />
       <StrongPoint />
@@ -21,7 +21,7 @@ const Home = () => {
       <OurNews />
       <FAQ />
       <YourIdeas />
-    </div>
+    </PageStyle>
   );
 };
 

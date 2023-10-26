@@ -11,8 +11,8 @@
     flex-direction: row;
     z-index: 10;
     transition: all 0.3s ease-in-out;
-    border-bottom: 1px solid #0080FF;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    // border-bottom: 1px solid #0080FF;
+    // box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
    
     
@@ -59,9 +59,9 @@
                 color: #000;
             }
 
-            &:hover {
-              border-bottom: 1px solid #0080FF;
-            }
+            // &:hover {
+            //   border-bottom: 1px solid #0080FF;
+            // }
         }
 
 

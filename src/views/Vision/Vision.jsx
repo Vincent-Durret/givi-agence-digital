@@ -5,16 +5,17 @@ import Us from "./Section/Us/Us";
 import Quote from "./Section/Quote/Quote";
 import Agency from "./Section/Agency/Agency";
 import TalkAbout from "./Section/TalkAbout/TalkAbout";
+import PageStyle from "../../components/Page/PageStyle";
 
 const Vision = () => {
   return (
-    <div className="vision">
+    <PageStyle>
       <Story />
       <Us />
       <Quote />
       <Agency />
       <TalkAbout />
-    </div>
+    </PageStyle>
   );
 };
 
